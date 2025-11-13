@@ -1,24 +1,182 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Andela - Global Tech Talent Platform</title>
-    <meta name="description" content="Connect with 150,000+ highly skilled tech professionals. Build better DevOps, Data, and AI solutions faster with Andela's adaptive hiring platform." />
-    <meta name="author" content="Andela" />
+    <title>Freelance Match - Global Tech Talent Platform</title>
+    <meta
+      name="description"
+      content="Connect with 150,000+ highly skilled tech professionals. Build better DevOps, Data, and AI solutions faster with Freelance Match's adaptive hiring platform."
+    />
+    <meta name="author" content="Freelance Match" />
 
-    <meta property="og:title" content="Andela - Global Tech Talent Platform" />
-    <meta property="og:description" content="Connect with 150,000+ highly skilled tech professionals. Build better DevOps, Data, and AI solutions faster." />
+    <meta
+      property="og:title"
+      content="Freelance Match - Global Tech Talent Platform"
+    />
+    <meta
+      property="og:description"
+      content="Connect with 150,000+ highly skilled tech professionals. Build better DevOps, Data, and AI solutions faster."
+    />
     <meta property="og:type" content="website" />
-    <meta property="og:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
+    <meta
+      property="og:image"
+      content="https://lovable.dev/opengraph-image-p98pqg.png"
+    />
 
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:site" content="@lovable_dev" />
-    <meta name="twitter:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
+    <meta
+      name="twitter:image"
+      content="https://lovable.dev/opengraph-image-p98pqg.png"
+    />
+
+    <style>
+      /* Global styles for the page */
+      body {
+        margin: 0;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
+          "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
+          "Helvetica Neue", sans-serif;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        background: linear-gradient(
+          -45deg,
+          #ee7752,
+          #e73c7e,
+          #23a6d5,
+          #23d5ab
+        ); /* Modern vibrant gradient */
+        background-size: 400% 400%;
+        animation: gradientShift 15s ease infinite; /* Animated gradient shift */
+        color: #ffffff; /* White text for readability on colorful gradient */
+        overflow-x: hidden;
+      }
+
+      @keyframes gradientShift {
+        0% {
+          background-position: 0% 50%;
+        }
+        50% {
+          background-position: 100% 50%;
+        }
+        100% {
+          background-position: 0% 50%;
+        }
+      }
+
+      #root {
+        position: relative;
+        min-height: 100vh;
+      }
+
+      /* Hero Section with Subtle Fade-in Animation */
+      .hero {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        text-align: center;
+        padding: 0 20px;
+        animation: fadeInUp 1.5s ease-out;
+        background: rgba(
+          0,
+          0,
+          0,
+          0.3
+        ); /* Subtle overlay for better text readability */
+      }
+
+      @keyframes fadeInUp {
+        from {
+          opacity: 0;
+          transform: translateY(30px); /* Subtler translation */
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      .hero h1 {
+        font-size: 3.5rem;
+        margin-bottom: 1rem;
+        animation: slideInLeft 1s ease-out 0.5s both;
+        color: #ffffff; /* White for contrast */
+        text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); /* Shadow for readability */
+      }
+
+      @keyframes slideInLeft {
+        from {
+          opacity: 0;
+          transform: translateX(-50px); /* Subtler slide */
+        }
+        to {
+          opacity: 1;
+          transform: translateX(0);
+        }
+      }
+
+      .hero p {
+        font-size: 1.25rem;
+        max-width: 600px;
+        margin-bottom: 2rem;
+        animation: slideInRight 1s ease-out 1s both;
+        color: #f0f0f0; /* Light gray for subtitle */
+        text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5); /* Subtle shadow */
+      }
+
+      @keyframes slideInRight {
+        from {
+          opacity: 0;
+          transform: translateX(50px); /* Subtler slide */
+        }
+        to {
+          opacity: 1;
+          transform: translateX(0);
+        }
+      }
+
+      .cta-button {
+        background: #667eea; /* Professional blue primary */
+        border: none;
+        color: white;
+        padding: 15px 30px;
+        font-size: 1.1rem;
+        border-radius: 8px; /* Sharper corners for formality */
+        cursor: pointer;
+        transition: all 0.3s ease;
+        animation: none; /* Removed pulse for less playfulness */
+        font-weight: 600; /* Bolder for emphasis */
+      }
+
+      .cta-button:hover {
+        background: #5a67d8; /* Darker blue on hover */
+        transform: translateY(-2px); /* Subtle lift instead of scale */
+        box-shadow: 0 4px 12px rgba(102, 126, 234, 0.3); /* Professional shadow */
+      }
+
+      /* Removed floating icons and particles for a cleaner, more formal look */
+    </style>
   </head>
 
   <body>
-    <div id="root"></div>
+    <div id="root">
+      <!-- Hero Section -->
+      <section class="hero">
+        <h1>Freelance Match</h1>
+        <p>
+          Connect with 150,000+ highly skilled tech professionals. Build better
+          DevOps, Data, and AI solutions faster with our adaptive hiring
+          platform.
+        </p>
+        <button class="cta-button">Get Started</button>
+      </section>
+
+      <!-- Your React app can render additional sections here -->
+    </div>
+
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>
