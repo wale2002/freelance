@@ -32,28 +32,12 @@
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
         background: linear-gradient(
-          -45deg,
-          #ee7752,
-          #e73c7e,
-          #23a6d5,
-          #23d5ab
-        ); /* Modern vibrant gradient */
-        background-size: 400% 400%;
-        animation: gradientShift 15s ease infinite; /* Animated gradient shift */
-        color: #ffffff; /* White text for readability on colorful gradient */
+          to right,
+          #28a745,
+          #fffdd0
+        ); /* Green to cream gradient for a fresh, modern freelance platform theme */
+        color: #ffffff; /* White text for readability on gradient */
         overflow-x: hidden;
-      }
-
-      @keyframes gradientShift {
-        0% {
-          background-position: 0% 50%;
-        }
-        50% {
-          background-position: 100% 50%;
-        }
-        100% {
-          background-position: 0% 50%;
-        }
       }
 
       #root {
@@ -130,7 +114,7 @@
       }
 
       .cta-button {
-        background: #667eea; /* Professional blue primary */
+        background: #28a745; /* Green primary to match the theme */
         border: none;
         color: white;
         padding: 15px 30px;
@@ -143,9 +127,9 @@
       }
 
       .cta-button:hover {
-        background: #5a67d8; /* Darker blue on hover */
+        background: #218838; /* Darker green on hover */
         transform: translateY(-2px); /* Subtle lift instead of scale */
-        box-shadow: 0 4px 12px rgba(102, 126, 234, 0.3); /* Professional shadow */
+        box-shadow: 0 4px 12px rgba(40, 167, 69, 0.3); /* Matching green shadow */
       }
 
       /* Footer Styles */
